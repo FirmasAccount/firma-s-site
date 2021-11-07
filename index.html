@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+    	<title>Moroni's SoundBoard</title>
+
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    	<style type="text/css">
+    		.porra:focus, .porra::-moz-focus-inner{
+			  outline:none;
+			  border:none;
+			}
+			.porra{
+			  font-family: arial;
+			  font-size:14px;
+			  text-transform: uppercase;
+			  font-weight:700;
+			  border:none;
+			  padding:10px;
+			  cursor: pointer;
+			  display:inline-block;
+			  text-decoration: none;
+			  height: 70px;
+			  width: 100px;
+			  border-radius: 30px;
+			}
+			.porra-green{
+			  background:green;
+			  color:#fff;
+			  box-shadow:0 5px 0 #006000;
+			}
+			.porra-green:hover{
+			  background:#006000;
+			  box-shadow:0 5px 0 #003f00;
+			}
+			.porra-purple{
+			  background:purple;
+			  color:#fff;
+			  box-shadow:0 5px 0 #670167;
+			}
+			.porra-purple:hover{
+			  background:#670167;
+			  box-shadow:0 5px 0 #470047;
+			}
+			.porra-red{
+			  background:red;
+			  color:#fff;
+			  box-shadow:0 5px 0 #d20000;
+			}
+			.porra-red:hover{
+			  background:#d20000;
+			  box-shadow:0 5px 0 #b00000;
+			}
+			.porra-green:active, .porra-purple:active, .porra-red:active{
+			  position:relative;
+			  top:5px;
+			  box-shadow:none;
+			}
+    	</style>
+
+    	<script type="text/javascript">
+    		
+    		function play(path) {
+       			var audio = new Audio(path);
+	    		audio.play();
+      		}
+
+    	</script>	
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	      <!-- Logo -->
+	      <a href="" class="navbar-brand">
+	      	<img class="d-flex" src="the-rock-face.gif" alt="" width="70" height="70">
+	      </a>
+	      <a href="" class="navbar-brand">
+	      	Moroni's SoundBoard
+	      </a>
+
+	    </nav>
+
+		<div class="container">  
+
+			<div class="py-3 text-center">
+				<h2>A firma é o comando &#x1F525 &#x1F60E &#x1F525</h2>
+				<p class="lead">"Meu pinto é uma alavanca, meu saco é uma marreta. Vou até no fim do mundo por causa de uma buceta." Brega, Leno. </p>
+			</div>
+
+      		<div class="row">
+      			<div class="col-md-12">
+      				<div class="col-md-12 py-3 text-center d-flex ">
+
+      					<div class="col-md-4 text-center">
+      						<button class="porra porra-green " onmousedown="play('./audios/esseEMeuPatrao.ogg')" ></button>
+      						<h4 class="pt-2">Esse é meu patrão </h4>
+      					</div>
+
+      					<div class="col-md-4 text-center">
+      						<button class="porra porra-red" onmousedown="play('./audios/queIssoMeuFilho.ogg')"></button>
+      						<h4 class="pt-2">Que isso meu filho, calma </h4> 
+      					</div class="col-md-4 text-center">
+
+      					<div class="col-md-4 text-center">
+      						<button class="porra porra-purple " onmousedown="play('./audios/rapaz.ogg')"></button>
+      						<h4 class="pt-2">RAPAAAIZ &#x1F602</h4> 
+      					</div>
+      					
+      				</div>
+
+    				<div class="col-md-12 py-5 text-center d-flex">
+
+    					<div class="col-md-4 text-center">
+    						<button class="porra porra-green" onmousedown="play('./audios/uepa.ogg')"></button>
+    						<h4 class="pt-2">UEPAAA!! </h4> 
+    					</div>
+
+    					<div class="col-md-4 text-center">
+    						<button class="porra porra-red" onmousedown="play('./audios/ihVixi.ogg')"></button>
+    						<h4 class="pt-2">Ih VIXI!! </h4> 
+    					</div>
+
+    					<div class="col-md-4 text-center">
+    						<button class="porra porra-purple" onmousedown="play('./audios/ohPotencia.ogg')"></button>
+    						<h4 class="pt-2">OoOoh, potência </h4> 
+    					</div>
+ 	
+      				</div>
+
+      				<div class="col-md-12 py-5 d-flex justify-content-center">
+      					<div class="col-md-4 text-center ">
+      						<button class="porra porra-red" onmousedown="play('./audios/dancaGatinho.ogg')"></button>
+      						<h4 class="pt-2">Dança gatinho, dança </h4>
+      					</div>
+      				</div>
+  				</div>
+
+      	
+      		</div>
+      	</div>
+
+	</body>
+</html>
+
+    
+    
+   
